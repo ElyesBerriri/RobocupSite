@@ -1,0 +1,8 @@
+.berrnav{
+    border: 2px solid rgb(162, 123, 17);
+    background-color: rgb(239, 201, 48);
+    padding: 5px;
+}
+.berrnav a{
+    margin-left: 50px;
+}
