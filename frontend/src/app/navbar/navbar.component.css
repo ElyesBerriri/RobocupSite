@@ -1,8 +1,78 @@
-.berrnav{
-    border: 2px solid rgb(162, 123, 17);
-    background-color: rgb(239, 201, 48);
-    padding: 5px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: #1d1c18;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border-radius: 50px;
+  z-index: 1; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
 }
-.berrnav a{
-    margin-left: 50px;
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  margin: 0 20px;
+}
+
+.nav__links li {
+  margin-right: 20px;
+}
+
+.nav__links li:last-child {
+  margin-right: 0;
+}
+
+.nav__links a {
+  color: #e2ac0d;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__links a:hover {
+  color: #e2ad0db9;
+}
+
+.cta button {
+  padding: 8px 20px;
+  background-color: #e1dbbd;
+  color: #1d1c18;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.cta button:hover {
+  background-color: #e1dbbdb9;
+}
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
+  font-size: 16px;
+  text-decoration: none;
+}
+.logo {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
