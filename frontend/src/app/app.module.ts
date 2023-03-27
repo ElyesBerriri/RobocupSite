@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HistoriqueComponent } from './historique/historique.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialExampleModule } from 'src/material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RegistrationComponent } from './registration/registration.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
