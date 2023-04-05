@@ -1,1 +1,17 @@
-<p>historique works!</p>
+<owl-carousel-o [options]="customOptions">
+  <ng-template *ngFor="let e of Arrayurl" carouselSlide>
+    <div class="contain">
+      <img class="im1" src="{{e.url}}" alt="">
+      <div class="shapeX">
+          <div class="shape">
+              Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Vitae autem tempora
+              incidunt similique vero itaque ducimus
+              beatae ratione unde blanditiis culpa alias aut,
+              quos ad eius corporis! Culpa, quisquam deserunt.
+          </div>
+      </div>
+    </div>
+  </ng-template>
+
+</owl-carousel-o>
