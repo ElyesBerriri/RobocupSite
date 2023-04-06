@@ -1,12 +1,12 @@
 body{
-    background-image: url(ARE.png);
+    background-image: url(../../assets/ARE.png);
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 .container {
     width: 500px;
-    height: 500px;
+    height: 100%;
     margin-left: 470px;
     background-color: #E1DBBD;
     padding-top: 40px;
