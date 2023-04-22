@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialExampleModule } from 'src/material.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ParticipationComponent } from './participation/participation.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ParticipationComponent } from './participation/participation.component'
     HomeComponent,
     LoginComponent,
     RegistrationComponent,
-    ParticipationComponent
+    ParticipationComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
