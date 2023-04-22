@@ -5,7 +5,7 @@
           <a href="/">ASSOCIATION ROBOTIQUE ENSI&nbsp;</a>
         </h3>
         <img class="u-image u-image-contain u-image-default u-image-1" src="../../assets/images/CopiedeCopiedelogo.png" alt="" data-image-width="5765" data-image-height="5294">
-      </div></header> 
+      </div></header>
     <section class="u-clearfix u-image u-section-1" src="" id="sec-f0de" data-image-width="3000" data-image-height="1708">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-border-no-bottom u-border-no-left u-border-no-right u-border-no-top u-container-style u-group u-palette-5-base u-group-1">
@@ -146,8 +146,21 @@
         </div>
       </div>
     </section>
-    
-    
+    <owl-carousel-o [options]="customOptions" >
+      <ng-template *ngFor="let e of Arrayurl" carouselSlide>
+        <div class="contain">
+          <img class="im1" src="{{e.url}}" alt="">
+          <div class="shapeX">
+              <div class="shape">
+                  <span class="desc">{{e.desc}}</span>
+              </div>
+          </div>
+        </div>
+      </ng-template>
+
+    </owl-carousel-o>
+
+
     <footer class="u-clearfix u-footer u-palette-1-base" id="sec-b2dc"><div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-expanded-width-xs u-gutter-30 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
@@ -176,5 +189,6 @@
         <div class="u-align-left u-border-1 u-border-white u-expanded-width u-line u-line-horizontal u-opacity u-opacity-25 u-line-1"></div>
         <p class="u-align-center u-small-text u-text u-text-variant u-text-7">Sample footer text</p>
       </div></footer>
-  
+
 </body>
+
