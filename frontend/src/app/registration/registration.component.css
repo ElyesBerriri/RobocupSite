@@ -1,59 +1,82 @@
 body{
-    background-image: url(../../assets/ARE.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+  background-image: url(../../assets/ARE.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  
 }
 .container {
-    width: 500px;
-    height: 100%;
-    margin-left: 470px;
-    background-color: #E1DBBD;
-    padding-top: 40px;
-    padding-left: 75px;
-    font-size: 21px;
-    
-  } 
+  padding-top: 1000px;
+  padding-bottom: 600px;
+  width: 750px;
+  height: 700px;
+  margin-left: 470px;
+  background-color: #E1DBBD;
+  padding-top: 50px;
+  padding-left: 90px;
+  font-size: 21px;
   
-  label {
-    display: inline-block;
-    width: 100px;
-    text-align: left;
-    color: #1D1C18;
-    box-shadow: 20px;
-    
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"] {
-    width: 200px;
-    padding: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  input[type="radio"] {
-    margin-right: 10px;
-  }
-  
-  input[type="submit"] {
-    background-color: #E2AC0D;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 20px;
-    color: #1D1C18;
-    text-shadow: 1px 1px 2px #1D1C18, 0 0 25px #ccc, 0 0 5px #ccc;
-  }
-  
-  input[type="submit"]:hover {
-    opacity: 80%;
-    box-shadow: #1D1C18;
-    
-  }
+} 
 
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+  color: #1D1C18;
+  box-shadow: 20px;
+  margin-left: 50px;
+  padding-bottom: 0px;
   
   
+  
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 450px;
+  margin-left: 50px;
+  padding: 5px;
+  
+  margin-bottom: 10px;
+  border: 1px solid #1D1C18;
+}
+
+
+input[type="submit"] {
+  width: 450px;
+  background-color: #E2AC0D;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: #1D1C18;
+  text-shadow: 1px 1px 2px #1D1C18, 0 0 25px #ccc, 0 0 5px #ccc;
+}
+::placeholder {
+  
+  opacity: 0.2;
+  color:#1D1C18;
+  
+}
+input[type="submit"]:hover {
+  opacity: 80%;
+  box-shadow: #1D1C18;
+  
+}
+a {
+  color: grey; 
+  text-decoration: none;
+  opacity: 0.5;
+  margin-left: 170px; 
+  
+}
+
+a:hover {
+  text-decoration: underline; /* add underline on hover */
+  cursor: pointer; /* change cursor to hand on hover */
+}
+

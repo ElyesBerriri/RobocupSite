@@ -1,0 +1,30 @@
+<div class="col-md-12">
+  <div class="card card-container">
+    <img
+      class="profile-img-card"
+      src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
+    />
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" [(ngModel)]="username" required minlength="3" maxlength="20">
+    <div *ngIf="username.errors?.['required']">Username is required</div>
+    <div *ngIf="username.errors?.minlength">Username must be at least 3 characters</div>
+    <div *ngIf="username.errors?.maxlength">Username cannot be more than 20 characters</div>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="email" required email>
+    <div *ngIf="email.errors?.required">Email is required</div>
+    <div *ngIf="email.errors?.email">Invalid email format</div>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password" required minlength="6">
+    <div *ngIf="password.errors?.required">Password is required</div>
+    <div *ngIf="password.errors?.minlength">Password must be at least 6 characters</div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+  </div>
+</div>

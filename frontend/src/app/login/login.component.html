@@ -4,29 +4,17 @@
     <img style="height: 150px;width: 150px;position:sticky" src="../../assets/logoSouheil.png">
     <div class="container">
 
-        
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom"><br><br>
-      
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom"><br><br>
-      
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email"><br><br>
-      
-        <label for="telephone">Téléphone :</label>
-        <input type="tel" id="telephone" name="telephone"><br><br>
+        <form (ngSubmit)="onSubmit()">
+            <label for="nom">Username *</label><br><br>
+           <input type="text" id="nom" name="nom" placeholder="Enter your Username" [(ngModel)]="username" required><br><br>
 
-        <label for="date_naissance">Date de naissance :</label>
-        <input type="date" id="date_naissance" name="date_naissance"><br><br>
-      
-        <label for="sexe">Gender :</label>
-        <input type="radio" id="homme" name="sexe" value="homme">
-        <label for="homme">Homme</label>
-        <input type="radio" id="femme" name="sexe" value="femme">
-        <label for="femme">Femme</label><br><br>
-      
-        <input type="submit" value="Envoyer">
+            <label for="prenom">Password *</label><br><br>
+            <input type="password" id="prenom" name="prenom" placeholder="Enter your Password" [(ngModel)]="password" required><br><br>
+
+            <input type="submit" value="Login"><br>
+        </form>
+
+        <a routerLink="/signup">Don't have an account ?</a>
         
     </div>
     

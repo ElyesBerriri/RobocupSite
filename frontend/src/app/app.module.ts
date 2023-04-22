@@ -11,9 +11,11 @@ import { RegistrationComponent } from './registration/registration.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialExampleModule } from 'src/material.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     HistoriqueComponent,
     LoginComponent,
     RegistrationComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
