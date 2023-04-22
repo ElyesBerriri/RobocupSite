@@ -1,9 +1,9 @@
 package com.backend.controllers;
 
 import com.backend.models.*;
-import com.backend.models.repositories.RoleRepository;
-import com.backend.models.repositories.UserRepository;
-import com.backend.models.utils.JwtUtils;
+import com.backend.repositories.RoleRepository;
+import com.backend.repositories.UserRepository;
+import com.backend.utils.JwtUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

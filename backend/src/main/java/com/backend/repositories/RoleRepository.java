@@ -1,4 +1,4 @@
-package com.backend.models.repositories;
+package com.backend.repositories;
 
 import com.backend.models.ERole;
 import com.backend.models.Role;
