@@ -1,48 +1,52 @@
-
 <body>
-    
-    <img style="height: 150px;width: 150px;position:sticky" src="../../assets/logoSouheil.png">
-    <div class="container">
 
-        
-        <label for="nom">Chef d'equipe *</label>
-        <input type="text" id="nom" name="nom" placeholder="Enter your Team Leader"><br><br>
-      
-      
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" placeholder="Enter your Email"><br><br>
-      
-        <label for="telephone">Téléphone *</label>
-        <input type="tel" id="telephone" name="telephone" placeholder="Enter your Telephone Number"><br><br>
+        <img style="height: 150px;width: 150px;position:sticky" src="../../assets/logoSouheil.png">
+        <div class="container">
 
-        <label for="Robot">Robot *</label>
-        <input type="text" id="Robot" name="Robot" placeholder="Enter your Robot Name"><br><br>
-      
-        <label for="sexe">Concours *</label>
+                <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                        <label for="nom">Chef d'equipe *</label>
+                        <input type="text" id="nom" name="nom" placeholder="Enter your Team Leader"
+                                [(ngModel)]="form.chef" required #chef="ngModel"><br><br>
+                        <div class="alert alert-danger" *ngIf="chef.errors && f.submitted">
+                                <div *ngIf="chef.errors?.['required']">Chef is required</div>
+                        </div>
 
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your Email"
+                                [(ngModel)]="form.email" required email #email="ngModel"><br><br>
+                        <div class="alert alert-danger" *ngIf="email.errors && f.submitted">
+                                <div *ngIf="email.errors?.['required']">Email is required</div>
+                        </div>
 
-        <input type="radio" id="homme" name="sexe" value="Autonome">
-        <label for="homme">Autonome</label>
+                        <label for="telephone">Téléphone *</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Enter your Telephone Number"
+                                [(ngModel)]="form.tel" required #tel="ngModel"><br><br>
+                        <div class="alert alert-danger" *ngIf="tel.errors && f.submitted">
+                                <div *ngIf="tel.errors?.['required']">Téléphone is required</div>
+                        </div>
+                        <label for="Robot">Robot *</label>
+                        <input type="text" id="Robot" name="Robot" placeholder="Enter your Robot Name"
+                                [(ngModel)]="form.robot" required #robot="ngModel"><br><br>
+                        <div class="alert alert-danger" *ngIf="robot.errors && f.submitted">
+                                <div *ngIf="robot.errors?.['required']">Robot is required</div>
+                        </div>
+                        <label style="width: 100%;">Concours *</label>
+                        <label for="a">Autonome</label>
+                        <input type="radio" id="a" name="comp" value="Autonome" [(ngModel)]="form.concours" required
+                                #concours="ngModel">
+                        <label for="s">Suiveur</label>
+                        <input type="radio" id="s" name="comp" value="Suiveur" [(ngModel)]="form.concours" required
+                                #concours="ngModel">
+                        <label for="tt">Tout Terrain</label>
+                        <input type="radio" id="tt" name="comp" value="Tout Terrain" [(ngModel)]="form.concours"
+                                required #concours="ngModel">
 
-        
-        <input type="radio" id="femme" name="sexe" value="Suiveur">
-        <label for="femme">Suiveur</label>
-        
+                        <label for="j">Junior</label>
+                        <input type="radio" id="j" name="comp" value="Junior" [(ngModel)]="form.concours" required
+                                #concours="ngModel">
 
-        <div style="margin-left: 200px;">
-        <input type="radio" id="femme" name="sexe" value="ToutTerrain">
-        <label for="femme">Tout Terrain</label>
-
-        <input type="radio" id="femme" name="sexe" value="Junior">
-        <label for="femme">Junior</label>
+                        <input type="submit" value="Register ">
+                </form>
         </div>
 
-        
-        
-        
-      
-        <input type="submit" value="Register ">
-        
-    </div>
-    
 </body>

@@ -28,4 +28,14 @@ export class AuthService {
       password
     }, httpOptions);
   }
+
+  registerComp(chef: string, email: string, tel: string, robot: string, concours: string): Observable<any> {
+    return this.http.post(AUTH_API + 'RegisterRequest', {
+      chef,
+      email,
+      tel,
+      robot,
+      concours
+    }, httpOptions);
+  }
 }
