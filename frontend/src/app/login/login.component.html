@@ -4,14 +4,16 @@
     <img style="height: 150px;width: 150px;position:sticky" src="../../assets/logoSouheil.png">
     <div class="container">
 
-        
-        <label for="nom">Username *</label><br><br>
-        <input type="text" id="nom" name="nom" placeholder="Enter your Username"><br><br>
-      
-        <label for="prenom">Password *</label><br><br>
-        <input type="text" id="prenom" name="prenom"placeholder="Enter your Password"><br><br>
-      
-        <input type="submit" value="Login"><br>
+        <form (ngSubmit)="onSubmit()">
+            <label for="nom">Username *</label><br><br>
+           <input type="text" id="nom" name="nom" placeholder="Enter your Username" [(ngModel)]="username" required><br><br>
+
+            <label for="prenom">Password *</label><br><br>
+            <input type="password" id="prenom" name="prenom" placeholder="Enter your Password" [(ngModel)]="password" required><br><br>
+
+            <input type="submit" value="Login"><br>
+        </form>
+
         <a routerLink="/signup">Don't have an account ?</a>
         
     </div>

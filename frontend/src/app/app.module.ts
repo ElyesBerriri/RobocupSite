@@ -12,6 +12,10 @@ import { MaterialExampleModule } from 'src/material.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ParticipationComponent } from './participation/participation.component';
 import { SignupComponent } from './signup/signup.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { authInterceptorProviders } from './_helpers/auth.interceptor';
+
 
 @NgModule({
   declarations: [
@@ -28,9 +32,11 @@ import { SignupComponent } from './signup/signup.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialExampleModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [authInterceptorProviders],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
