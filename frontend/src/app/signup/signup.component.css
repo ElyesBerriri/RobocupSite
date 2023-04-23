@@ -8,11 +8,12 @@ body{
     padding-top: 1000px;
     padding-bottom: 600px;
     width: 750px;
-    height: 500px;
+    height: 900px;
     margin-left: 470px;
     background-color: #E1DBBD;
     padding-top: 50px;
     padding-left: 90px;
+    padding-right: 90px;
     font-size: 21px;
     
   } 
@@ -32,7 +33,7 @@ body{
   
   input[type="text"],
   input[type="email"],
-  input[type="tel"] {
+  input[type="password"] {
     width: 450px;
     margin-left: 50px;
     padding: 5px;

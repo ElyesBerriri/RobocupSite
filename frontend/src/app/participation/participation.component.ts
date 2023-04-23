@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class ParticipationComponent  implements OnInit{
   currentParticipant: any;
 
-  constructor(private ParticipantService: participantService) { }
+  constructor(/* private ParticipantService: participantService */) { }
 //me
   ngOnInit(): void {
-    this.participantService.getUserBoard().subscribe(
+    /* this.participantService.getUserBoard().subscribe(
       data => {
         this.currentParticipant = this.ParticipantService.getUser();
       },
@@ -19,7 +19,7 @@ export class ParticipationComponent  implements OnInit{
         this.token.signOut();
         window.location.assign("/home");
       }
-    );
+    ); */
 
   }
 }
