@@ -35,6 +35,7 @@ export class SignupComponent implements OnInit {
         console.log(data);
         this.isSuccessful = true;
         this.isSignUpFailed = false;
+        alert("Your registration is successful!");
         this.router.navigate(['/login']);
       },
       (err: any) => {

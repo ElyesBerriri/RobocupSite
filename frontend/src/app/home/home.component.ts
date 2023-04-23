@@ -17,13 +17,13 @@ export class HomeComponent {
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
-    autoplayTimeout:10000,
-    autoplaySpeed:200,
+    autoplayTimeout:3000,
+    autoplaySpeed:1000,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
     dots: true,
-    navSpeed: 700,
+    navSpeed: 1000,
     navText: ['〈','〉'],
     responsive: {
       0: {
