@@ -17,3 +17,9 @@ body
   padding: 20px;
   margin: 20px;
 }
+
+.text{
+  margin: 20px;
+  font-size: 20px;
+  color: #f2f2f2;
+}

@@ -1,6 +1,9 @@
-<div class="container">
-  <span id="Chef"></span>
-  <span id="tel"></span>
-  <span id="concours"></span>
-  <span id=""></span>
+<div class="container" *ngIf="currentParticipant; else loggedOut">
+  <span class="text">Chef d'equipe : {{currentParticipant.chef}}</span>
+  <span class="text">Numéro de telephone : {{currentParticipant.tel}}</span>
+  <span class="text">Email : {{currentParticipant.email}}</span>
+  <span class="text">Compétition : {{currentParticipant.concours}}</span>
+  <span class="text">Robot Name{{currentParticipant.robot}}</span>
 </div>
+<ng-template #loggedOut>
+</ng-template>
